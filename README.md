@@ -1,4 +1,19 @@
 # Shoutbox
+## Description
+This project is an electronic shopping application developed using Java for the backend and React for the frontend. It allows users to browse and purchase electronic products in a user-friendly interface.
+## Features
+- User authentication and authorization
+- Product catalog with detailed descriptions
+- Shopping cart functionality
+- Order processing and tracking
+- Responsive design for various devices
+## Technologies Used
+- Java
+- React
+- Spring Boot
+- MySQL (or any other database you used)
+- HTML, CSS, JavaScript
+
 
 
 
