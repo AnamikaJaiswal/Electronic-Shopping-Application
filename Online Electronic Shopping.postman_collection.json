@@ -1,0 +1,1093 @@
+{
+	"info": {
+		"_postman_id": "b6806a9c-1a2a-471a-86d2-9a90cd999cfa",
+		"name": "Online Electronic Shopping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VendorDetails",
+			"item": [
+				{
+					"name": "All Vendor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Vendor",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Vendor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "venname",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "venemail",
+									"value": "amit@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "venpwd",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "venmob",
+									"value": "9843375650",
+									"type": "text"
+								},
+								{
+									"key": "venpan",
+									"value": "AY45ID8901",
+									"type": "text"
+								},
+								{
+									"key": "venstate",
+									"value": "PUNE",
+									"type": "text"
+								},
+								{
+									"key": "venpincode",
+									"value": "400987",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vendor/signup",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendor",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "amit@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "amit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vendor/signin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendor",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VendorBYEMAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Vendor/amit@gmail.com",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Vendor",
+								"amit@gmail.com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VendorBYID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/Vendor/ven/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Vendor",
+								"ven",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update vendor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "venname",
+									"value": "sandeep",
+									"type": "text"
+								},
+								{
+									"key": "venemail",
+									"value": "Sandeep@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "venpwd",
+									"value": "hello",
+									"type": "text"
+								},
+								{
+									"key": "venmob",
+									"value": "8474846564",
+									"type": "text"
+								},
+								{
+									"key": "venpan",
+									"value": "HDGDF8565",
+									"type": "text"
+								},
+								{
+									"key": "venstate",
+									"value": "MP",
+									"type": "text"
+								},
+								{
+									"key": "venpincode",
+									"value": "348585",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/Vendor/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"Vendor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "venstatus",
+									"value": "active",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vendor/status/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendor",
+								"status",
+								"1"
+							],
+							"query": [
+								{
+									"key": "venstatus",
+									"value": "active",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendor/delvend/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendor",
+								"delvend",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CustomerDetails",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cusname",
+									"value": "Nilesh",
+									"type": "text"
+								},
+								{
+									"key": "cusemail",
+									"value": "nilesh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "cuspwd",
+									"value": "Nilesh",
+									"type": "text"
+								},
+								{
+									"key": "cusmob",
+									"value": "9836464748",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/customer/signup",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "nilesh@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Nilesh",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/customer/cus/signin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"cus",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cusname",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/customer/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cus by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/customers/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/customer/delcust/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"customer",
+								"delcust",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer Address",
+			"item": [
+				{
+					"name": "All Address",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "amit@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "amit",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/address",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/address/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"address",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cusid",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "addtype",
+									"value": "Office",
+									"type": "text"
+								},
+								{
+									"key": "streetno",
+									"value": "104",
+									"type": "text"
+								},
+								{
+									"key": "landmark",
+									"value": "clg",
+									"type": "text"
+								},
+								{
+									"key": "dist",
+									"value": "Mumbai",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "MH",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "431007",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/address/addaddress",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"address",
+								"addaddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find by cusid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/address/cus/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"address",
+								"cus",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cname",
+									"value": "Laptop",
+									"type": "text"
+								},
+								{
+									"key": "comm",
+									"value": "0.20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/category/addCategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View all Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comm update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "comm",
+									"value": "0.15",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}//category/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vendor Product",
+			"item": [
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "venid",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "cid",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "prodname",
+									"value": "Mobile Phone",
+									"type": "text"
+								},
+								{
+									"key": "vprice",
+									"value": "17000",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Mobile Phone",
+									"type": "text"
+								},
+								{
+									"key": "brandname",
+									"value": "Samsung",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Dell/Desktop/Images/mobile/mob3.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vendorproduct/addproduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"addproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendorproduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendorproduct/venprod/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"venprod",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quantity",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "vprice",
+									"value": "80000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/vendorproduct/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendorproduct/delvendprod/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"delvendprod",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendorproduct/cid/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"cid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find by venid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/vendorproduct/venid/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"vendorproduct",
+								"venid",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orders",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cusid",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "aid",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "paymentmode",
+									"value": "Card  11",
+									"type": "text"
+								},
+								{
+									"key": "totalpayment",
+									"value": "50001",
+									"type": "text"
+								},
+								{
+									"key": "odate",
+									"value": "2021/06/22",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pid",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "oquantity",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/orders/addorder",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orders",
+								"addorder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orders/orderid/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orders",
+								"orderid",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orders/delorder/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orders",
+								"delorder",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Cusid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orders/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order Details",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orderdetails",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orderdetails"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Qty",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "oquantity",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "oid",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "pid",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/orderdetails/addqty",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orderdetails",
+								"addqty"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find by Odid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orderdetails/orderdetailsid/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orderdetails",
+								"orderdetailsid",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By oid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/orderdetails/orderid/6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"orderdetails",
+								"orderid",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8080"
+		}
+	]
+}
